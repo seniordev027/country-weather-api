@@ -14,6 +14,6 @@ test('renders CountryMaps with correct Google Maps URL', () => {
 
   expect(iframeElement).toHaveAttribute(
     'src',
-    `https://www.google.com/maps?q=${lat},${lon}&z=5&ie=UTF8&iwloc=&output=embed`
+    `https://www.google.com/maps?z=5&ie=UTF8&iwloc=&output=embed&q=${lat},${lon}`
   );
 });

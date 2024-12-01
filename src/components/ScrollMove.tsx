@@ -7,7 +7,7 @@ const ScrollMove = () => {
 
   const handleVisibleBtn = () => {
     const position = window.pageYOffset;
-    console.log("Current position:", position); // Debug log
+    console.log("Current position:", position);
     setScrollPosition(position);
     if (position > 200) {
       setShowButtons('visible');
@@ -25,7 +25,7 @@ const ScrollMove = () => {
   }, []);
 
   const scrollTop = () => {
-    console.log("scrollTop called"); // Debug log
+    console.log("scrollTop called");
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
